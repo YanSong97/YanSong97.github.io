@@ -17,6 +17,8 @@ If you’d like to discuss potential collaborations or shared research interests
 
 ## News
 
+- **[2025.03.13]** **RL** can interactively train two LLM agents to reason ! Our paper [*ReMA: Learning to Meta-think for LLMs with Multi-Agent Reinforcement Learning*](https://arxiv.org/abs/2503.09501) is available on Arxiv ! 
+
 - **[2025.01]** Our paper [*Efficient Reinforcement Learning with Large Language Model Priors*](https://arxiv.org/pdf/2410.07927) got accepted by **ICLR 2025** !
 
 - **[2024.10]** We release our LLM reasoning framework -- [***OpenR***](https://github.com/openreasoner/openr) !
