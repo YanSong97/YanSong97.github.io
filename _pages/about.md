@@ -17,8 +17,7 @@ If you’d like to discuss potential collaborations or shared research interests
 
 ## News
 
-- **[2025.05]** Our paper [*Ask more, know better: Reinforce-Learned Prompt Questions for Decision Making with Large Language Models
-*](https://arxiv.org/abs/2310.18127) got accepted by **ECML-PKDD 2025**. A Testament to Persistence!
+- **[2025.05]** Our paper [*Ask more, know better: Reinforce-Learned Prompt Questions for Decision Making with Large Language Models*](https://arxiv.org/abs/2310.18127) got accepted by **ECML-PKDD 2025**. A Testament to Persistence!
 
 - **[2025.05]** We have successfully held the [**AAMAS 2025** Online AI Competitions](https://aamas2025.org/index.php/conference/program/competitions/)!
 
