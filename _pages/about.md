@@ -17,6 +17,11 @@ If you’d like to discuss potential collaborations or shared research interests
 
 ## News
 
+- **[2025.05]** Our paper [*Ask more, know better: Reinforce-Learned Prompt Questions for Decision Making with Large Language Models
+*](https://arxiv.org/abs/2310.18127) got accepted by **ECML-PKDD 2025**. A Testament to Persistence!
+
+- **[2025.05]** We have successfully held the [**AAMAS 2025** Online AI Competitions](https://aamas2025.org/index.php/conference/program/competitions/)!
+
 - **[2025.03]** **RL** can now interactively train two LLM agents to reason ! Our paper [*ReMA: Learning to Meta-think for LLMs with Multi-Agent Reinforcement Learning*](https://arxiv.org/abs/2503.09501) is available on Arxiv ! 
 
 - **[2025.01]** Our paper [*Efficient Reinforcement Learning with Large Language Model Priors*](https://arxiv.org/pdf/2410.07927) got accepted by **ICLR 2025** !
