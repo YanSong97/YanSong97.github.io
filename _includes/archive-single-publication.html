@@ -1,0 +1,108 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<!-- Determine venue tier for styling -->
+{% assign venue_tier = "" %}
+{% assign venue_class = "" %}
+{% if post.venue contains 'NeurIPS' or post.venue contains 'ICML' or post.venue contains 'ICLR' or post.venue contains 'AAAI' %}
+  {% assign venue_tier = "tier-1" %}
+{% elsif post.venue contains 'AAMAS' or post.venue contains 'ECML' or post.venue contains 'IJCAI' %}
+  {% assign venue_tier = "tier-2" %}
+{% elsif post.category == 'manuscripts' or post.venue contains 'Journal' or post.venue contains 'Research' %}
+  {% assign venue_class = "journal" %}
+{% elsif post.category == 'preprints' %}
+  {% assign venue_class = "preprint" %}
+{% else %}
+  {% assign venue_tier = "tier-3" %}
+{% endif %}
+
+<div class="publication-item {{ venue_tier }}">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <!-- Venue Badge -->
+    {% if post.venue %}
+      <span class="venue-badge {{ venue_tier }} {{ venue_class }}">
+        {{ post.venue | split: ' ' | first }}
+      </span>
+    {% endif %}
+    
+    <!-- Title -->
+    <h3 class="archive__item-title" itemprop="headline" style="margin-top: 0;">
+      {% if post.link %}
+        <a href="{{ post.link }}" style="color: #333; text-decoration: none;">{{ title }}</a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink" style="color: #333; text-decoration: none;">{{ title }}</a>
+      {% endif %}
+    </h3>
+    
+    <!-- Authors -->
+    {% if post.excerpt %}
+      <div class="publication-authors">
+        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+      </div>
+    {% endif %}
+    
+    <!-- Publication Meta -->
+    <div class="publication-meta">
+      {% if post.venue %}
+        <strong>{{ post.venue }}</strong>
+      {% endif %}
+      {% if post.date %}
+        • {{ post.date | default: "1900-01-01" | date: "%Y" }}
+      {% endif %}
+      {% if post.category == 'preprints' %}
+        • <span style="color: #7b68ee;"><i class="fa fa-clock-o" aria-hidden="true"></i> Preprint</span>
+      {% endif %}
+    </div>
+    
+    <!-- Links -->
+    <div class="publication-links">
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" target="_blank">
+          <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper
+        </a>
+      {% endif %}
+      {% if post.slidesurl %}
+        <a href="{{ post.slidesurl }}" target="_blank">
+          <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i> Slides
+        </a>
+      {% endif %}
+      {% if post.link %}
+        <a href="{{ post.link }}" target="_blank">
+          <i class="fa fa-external-link" aria-hidden="true"></i> Link
+        </a>
+      {% endif %}
+      {% if post.citation %}
+        <a href="#" onclick="copyToClipboard('{{ post.citation | escape }}'); return false;">
+          <i class="fa fa-quote-left" aria-hidden="true"></i> Citation
+        </a>
+      {% endif %}
+    </div>
+    
+    <!-- Citation (hidden by default, shown on click) -->
+    {% if post.citation %}
+      <div id="citation-{{ forloop.index }}" style="display: none; margin-top: 10px; padding: 10px; background-color: #f8f9fa; border-left: 3px solid #337ab7; font-family: monospace; font-size: 0.9em;">
+        {{ post.citation }}
+      </div>
+    {% endif %}
+
+  </article>
+</div>
+
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+    // Show a brief notification
+    const notification = document.createElement('div');
+    notification.textContent = 'Citation copied to clipboard!';
+    notification.style.cssText = 'position: fixed; top: 20px; right: 20px; background: #4CAF50; color: white; padding: 10px; border-radius: 4px; z-index: 1000;';
+    document.body.appendChild(notification);
+    setTimeout(() => document.body.removeChild(notification), 2000);
+  });
+}
+</script>

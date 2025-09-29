@@ -6,10 +6,94 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="https://scholar.google.com/citations?hl=en&user=73gc9pYAAAAJ">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">
+    <p><i class="fa fa-graduation-cap" aria-hidden="true"></i> You can also find my articles on <a href="https://scholar.google.com/citations?hl=en&user=73gc9pYAAAAJ">my Google Scholar profile</a>.</p>
+  </div>
 {% endif %}
 
 {% include base_path %}
+
+<style>
+.publication-item {
+  border-left: 4px solid #e6e6e6;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.publication-item.tier-1 {
+  border-left-color: #d4af37;
+}
+
+.publication-item.tier-2 {
+  border-left-color: #c0c0c0;
+}
+
+.publication-item.tier-3 {
+  border-left-color: #cd7f32;
+}
+
+.venue-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.venue-badge.tier-1 {
+  background-color: #d4af37;
+  color: white;
+}
+
+.venue-badge.tier-2 {
+  background-color: #c0c0c0;
+  color: white;
+}
+
+.venue-badge.tier-3 {
+  background-color: #cd7f32;
+  color: white;
+}
+
+.venue-badge.journal {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.venue-badge.preprint {
+  background-color: #7b68ee;
+  color: white;
+}
+
+.publication-links {
+  margin-top: 10px;
+}
+
+.publication-links a {
+  margin-right: 15px;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.publication-links a:hover {
+  text-decoration: underline;
+}
+
+.publication-meta {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.publication-authors {
+  color: #555;
+  font-style: italic;
+  margin: 5px 0;
+}
+</style>
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
@@ -20,19 +104,21 @@ author_profile: true
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        <!-- {% assign title_shown = true %} -->
-      {% endunless %}
-      {% unless title_shown %}
-        <h2>{{ category[2].title }}</h2><hr />
+        <h2><i class="fa fa-book" aria-hidden="true"></i> {{ category[1].title }}</h2>
+        <hr style="margin-bottom: 30px;" />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% unless title_shown %}
+        <h2><i class="fa fa-book" aria-hidden="true"></i> {{ category[2].title }}</h2>
+        <hr style="margin-bottom: 30px;" />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single-publication.html %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    {% include archive-single-publication.html %}
   {% endfor %}
 {% endif %}
 
