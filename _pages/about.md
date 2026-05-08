@@ -17,6 +17,8 @@ If you’d like to discuss potential collaborations or shared research interests
 
 ## News
 
+- **[2026.05]** Here comes our second collaboration paper with [**Li Auto**](https://www.liauto.com/):  [*The Perceptual Bandwidth Bottleneck in Vision-Language Models: Active Visual Reasoning via Sequential Experimental Design*](https://arxiv.org/abs/2605.01345) and has been accepted by **ICML 2026** !
+
 - **[2026.02]** We have been closely collaborating with [**Li Auto**](https://www.liauto.com/) on several research topics. Now we have released our first joint paper: [*Hardware Co-Design Scaling Laws via Roofline Modelling for On-Device LLMs*](https://arxiv.org/abs/2602.10377). Well Done Guys! Stay tuned for more to come out!
 
 - **[2025.05]** Our paper [*Ask more, know better: Reinforce-Learned Prompt Questions for Decision Making with Large Language Models*](https://arxiv.org/abs/2310.18127) got accepted by **ECML-PKDD 2025**. A Testament to Persistence!
