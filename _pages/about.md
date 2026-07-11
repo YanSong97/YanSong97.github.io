@@ -17,6 +17,8 @@ If you’d like to discuss potential collaborations or shared research interests
 
 ## News
 
+- **[2026.07]** Our paper [*Learning Stateful Predictive Knowledge From Experience*](https://openreview.net/forum?id=TvWb3pcWEo) is available at the **ICML 2026 AIWILD Workshop**.
+
 - **[2026.05]** Here comes our second collaboration paper with [**Li Auto**](https://www.liauto.com/):  [*The Perceptual Bandwidth Bottleneck in Vision-Language Models: Active Visual Reasoning via Sequential Experimental Design*](https://arxiv.org/abs/2605.01345) and has been accepted by **ICML 2026** !
 
 - **[2026.02]** We have been closely collaborating with [**Li Auto**](https://www.liauto.com/) on several research topics. Now we have released our first joint paper: [*Hardware Co-Design Scaling Laws via Roofline Modelling for On-Device LLMs*](https://arxiv.org/abs/2602.10377). Well Done Guys! Stay tuned for more to come out!
