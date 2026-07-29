@@ -3,12 +3,12 @@ title: "Learning Stateful Predictive Knowledge From Experience"
 collection: publications
 category: conferences
 permalink: Learning-Stateful-Predictive-Knowledge
-excerpt: '**Yan Song**, Guannan Zhang, Weiyu Ma, Chi Zhang, Yu Liu, Yifei Liu, Han Kang, Zihan Guo, Shangdong Yang, Tom Schaul, Jun Wang, Jian Zhao'
+excerpt: '**Yan Song**, Xidong Feng, Bo Liu, Xinyu Cui, Zichen Liu, Haotian Fu, Mengyue Yang, Cheng Deng, Jian Zhao, Jun Wang'
 date: 2026-07-01
 venue: 'ICML 2026 AIWILD Workshop'
 paperurl: 'https://openreview.net/pdf?id=TvWb3pcWEo'
 link: 'https://openreview.net/forum?id=TvWb3pcWEo'
-citation: 'Song, Y., Zhang, G., Ma, W., Zhang, C., Liu, Y., Liu, Y., Kang, H., Guo, Z., Yang, S., Schaul, T., Wang, J., & Zhao, J. (2026). Learning Stateful Predictive Knowledge From Experience. <i>ICML 2026 Workshop on Agents, Interaction, and Intelligence in the Wild (AIWILD)</i>.'
+citation: 'Song, Y., Feng, X., Liu, B., Cui, X., Liu, Z., Fu, H., Yang, M., Deng, C., Zhao, J., & Wang, J. (2026). Learning Stateful Predictive Knowledge From Experience. <i>ICML 2026 Workshop on Agents, Interaction, and Intelligence in the Wild (AIWILD)</i>.'
 prefix: "Published on"
 ---
 
