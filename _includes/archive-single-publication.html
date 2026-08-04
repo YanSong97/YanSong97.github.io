@@ -72,6 +72,16 @@
           <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i> Slides
         </a>
       {% endif %}
+      {% if post.blogurl %}
+        <a href="{{ post.blogurl | relative_url }}">
+          <i class="fa fa-pencil" aria-hidden="true"></i> Blog
+        </a>
+      {% endif %}
+      {% if post.xurl %}
+        <a href="{{ post.xurl }}" target="_blank">
+          <i class="fab fa-x-twitter" aria-hidden="true"></i> X Post
+        </a>
+      {% endif %}
       {% if post.link %}
         <a href="{{ post.link }}" target="_blank">
           <i class="fa fa-external-link" aria-hidden="true"></i> Link

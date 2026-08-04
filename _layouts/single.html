@@ -60,6 +60,12 @@ layout: default
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.blogurl or page.xurl %}
+          <div>
+            {% if page.blogurl %}<a href="{{ page.blogurl | relative_url }}" class="btn"><i class="fa fa-pencil" aria-hidden="true"></i> Blog</a>{% endif %}
+            {% if page.xurl %}<a href="{{ page.xurl }}" class="btn"><i class="fab fa-x-twitter" aria-hidden="true"></i> X Post</a>{% endif %}
+          </div>
+        {% endif %}
       </section>
 
       <footer class="page__meta">
