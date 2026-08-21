@@ -17,6 +17,8 @@ If you’d like to discuss potential collaborations or shared research interests
 
 ## News
 
+- **[2026.08]** Our new paper [*Large Discovery Models: Empirically-grounded Model-Based Open-Ended Search*](https://arxiv.org/abs/2608.15669) is now available on arXiv! It targets the problem that language models don't know how to explore or exploit, an everlasting topic for RL scienctists.  [[Paper](https://arxiv.org/abs/2608.15669)]
+
 - **[2026.07]** Our paper [*Learning Stateful Predictive Knowledge From Experience*](https://arxiv.org/abs/2607.28638) is available at the **ICML 2026 AIWILD Workshop**. [[Paper](https://arxiv.org/abs/2607.28638)] [[Blog](/posts/2026/08/learning-stateful-predictive-knowledge/)] [[X Post](https://x.com/YS01934823/status/2084367339647283308)]
 
 - **[2026.05]** Here comes our second collaboration paper with [**Li Auto**](https://www.liauto.com/):  [*The Perceptual Bandwidth Bottleneck in Vision-Language Models: Active Visual Reasoning via Sequential Experimental Design*](https://arxiv.org/abs/2605.01345) and has been accepted by **ICML 2026** !
