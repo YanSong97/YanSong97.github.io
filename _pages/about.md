@@ -11,11 +11,152 @@ I’m a Ph.D. student in the Department of [Computer Science](https://www.ucl.ac
 
 My research interests lie in Reinforcement Learning, Multi-Agent Systems, and Large Language Models. 
 
+<style>
+.research-pathway {
+  margin: 2.25rem 0 2.5rem;
+}
+
+.research-pathway__intro {
+  max-width: 46rem;
+  margin-bottom: 1.75rem;
+  color: #4b5563;
+  font-size: 0.98em;
+  line-height: 1.65;
+}
+
+.research-pathway__stages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.research-pathway__stage {
+  position: relative;
+  min-width: 0;
+  padding-top: 0.85rem;
+  border-top: 3px solid var(--stage-color);
+}
+
+.research-pathway__stage--reward {
+  --stage-color: #13795b;
+}
+
+.research-pathway__stage--language {
+  --stage-color: #2864a6;
+}
+
+.research-pathway__stage--discovery {
+  --stage-color: #a23b4a;
+}
+
+.research-pathway__stage h3 {
+  margin: 0.35rem 0 0.2rem;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.research-pathway__question {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--stage-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.research-pathway__stage p {
+  margin: 0 0 0.85rem;
+  color: #4b5563;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.research-pathway__papers {
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.research-pathway__papers strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: #333;
+  font-size: 0.75rem;
+}
+
+.research-pathway__papers a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 700px) {
+  .research-pathway__stages {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .research-pathway__stage {
+    padding: 0 0 0.25rem 1rem;
+    border-top: 0;
+    border-left: 3px solid var(--stage-color);
+  }
+
+  .research-pathway__stage h3 {
+    margin-top: 0;
+  }
+}
+</style>
+
+## Research Themes
+
+<section class="research-pathway" aria-label="Research themes in value signals for agent learning">
+  <p class="research-pathway__intro">How should an LLM-based agent decide what to learn from? My research explores three complementary notions of <strong>value</strong> for post-training agents, each suited to different forms of feedback and learning problems.</p>
+
+  <ul class="research-pathway__stages">
+    <li class="research-pathway__stage research-pathway__stage--reward">
+      <h3>Verifiable Reward</h3>
+      <span class="research-pathway__question">Did it work?</span>
+      <p>When outcomes can be checked, scalar rewards provide a dependable training signal for reasoning, decision-making, and multi-agent coordination.</p>
+      <div class="research-pathway__papers">
+        <strong>Selected work</strong>
+        <a href="https://arxiv.org/abs/2410.09671">OpenR</a> ·
+        <a href="https://arxiv.org/abs/2410.07927">Efficient RL with LLM Priors</a> ·
+        <a href="https://arxiv.org/abs/2503.09501">ReMA</a>
+      </div>
+    </li>
+
+    <li class="research-pathway__stage research-pathway__stage--language">
+      <h3>Language Value</h3>
+      <span class="research-pathway__question">Why did it work?</span>
+      <p>A scalar says how good an experience was; a language value function can also explain why, preserving structured knowledge that agents can reuse and refine.</p>
+      <div class="research-pathway__papers">
+        <strong>Selected work</strong>
+        <a href="https://arxiv.org/abs/2411.14251">Natural Language RL</a> ·
+        <a href="https://arxiv.org/abs/2607.28638">Stateful Predictive Knowledge</a>
+      </div>
+    </li>
+
+    <li class="research-pathway__stage research-pathway__stage--discovery">
+      <h3>Discovery Value</h3>
+      <span class="research-pathway__question">What should we try next?</span>
+      <p>For open-ended problems, discovery value can encode whichever signals matter for choosing what to generate, refine, or test next, such as performance, uncertainty, novelty, or information gain. In Large Discovery Models, a Gaussian-process acquisition function is one concrete instantiation.</p>
+      <div class="research-pathway__papers">
+        <strong>Selected work</strong>
+        <a href="https://arxiv.org/abs/2608.15669">Large Discovery Models</a>
+      </div>
+    </li>
+  </ul>
+</section>
+
 If you’d like to discuss potential collaborations or shared research interests, feel free to contact me at *yan.song.24[at]ucl.ac.uk*.
 
 ---
 
 ## News
+
+- **[2026.09]** Our paper [*ToolGate: Token-Efficient Pre-Call Control for Tool-Augmented Vision-Language Agents*](https://arxiv.org/abs/2606.03054) has been accepted by **EMNLP 2026**! [[Paper](https://arxiv.org/abs/2606.03054)]
 
 - **[2026.08]** Our new paper [*Large Discovery Models: Empirically-grounded Model-Based Open-Ended Search*](https://arxiv.org/abs/2608.15669) is now available on arXiv! It targets the problem that language models don't know how to explore or exploit, an everlasting topic for RL scienctists.  [[Paper](https://arxiv.org/abs/2608.15669)]
 

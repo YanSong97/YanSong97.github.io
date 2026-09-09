@@ -9,7 +9,7 @@
 <!-- Determine venue tier for styling -->
 {% assign venue_tier = "" %}
 {% assign venue_class = "" %}
-{% if post.venue contains 'NeurIPS' or post.venue contains 'ICML' or post.venue contains 'ICLR' or post.venue contains 'AAAI' %}
+{% if post.venue contains 'NeurIPS' or post.venue contains 'ICML' or post.venue contains 'ICLR' or post.venue contains 'AAAI' or post.venue contains 'EMNLP' %}
   {% assign venue_tier = "tier-1" %}
 {% elsif post.venue contains 'AAMAS' or post.venue contains 'ECML' or post.venue contains 'IJCAI' %}
   {% assign venue_tier = "tier-2" %}
