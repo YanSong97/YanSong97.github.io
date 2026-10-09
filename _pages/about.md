@@ -156,6 +156,8 @@ If you’d like to discuss potential collaborations or shared research interests
 
 ## News
 
+- **[2026.10]** Recent paper updates: [**InfoPPO: Information-Time Proximal Policy Optimization**](https://arxiv.org/abs/2609.24380) and [**GanJiang: A self-learning scientific agent for X-ray diffraction**](https://arxiv.org/abs/2610.07862) are now available on arXiv! InfoPPO uses information density to guide credit propagation and policy updates for LLM reasoning, while GanJiang turns diffraction-analysis experience into reusable, validated skills. Our paper [*Hardware Co-Design Scaling Laws via Roofline Modelling for On-Device LLMs*](https://arxiv.org/abs/2602.10377) has also been accepted by **NeurIPS 2026**!
+
 - **[2026.09]** Our paper [*ToolGate: Token-Efficient Pre-Call Control for Tool-Augmented Vision-Language Agents*](https://arxiv.org/abs/2606.03054) has been accepted by **EMNLP 2026**! [[Paper](https://arxiv.org/abs/2606.03054)]
 
 - **[2026.08]** Our new paper [*Large Discovery Models: Empirically-grounded Model-Based Open-Ended Search*](https://arxiv.org/abs/2608.15669) is now available on arXiv! It targets the problem that language models don't know how to explore or exploit, an everlasting topic for RL scienctists.  [[Paper](https://arxiv.org/abs/2608.15669)]
